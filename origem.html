@@ -1,0 +1,74 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz origem do universo</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+         .botoes{
+             display: flex;
+
+         }
+         .tudo{
+             margin-top: 17%;
+             margin-left: 31%;
+             display: inline-block;
+             background-color: #606060;
+             border: 4px solid black;
+         }
+         button{
+             margin-left: 30%;
+             height: 25%;
+             width: 13%;
+         }
+         #video {
+             margin-left: 10%;
+         }
+         input{
+             height: 5%;
+             width: 80%;
+             margin-left: 10%;
+             border:1px solid black;
+         }
+         label{
+             margin-left: 20%;
+             font-size: 150%;
+         }
+    </style>
+</head>
+
+<script>
+    function funcred(nButton)
+    {
+        if(nButton == 0)
+        {
+            document.all.redirecionamento.value = 0;
+        }
+        else if(nButton == 1)
+        {
+            document.all.redirecionamento.value = 1;
+        }
+    }
+</script>
+
+<body>
+    <div class="tudo">
+        
+    <h1>Bem vindo a o clube da Astronomia  </h1>
+    <form action="redirect.php">
+        <label for="">Informe seu nome de viajante</label><br>
+        <input type="text " name="NOME" />
+        <input type="hidden" value="" name="redirecionamento" id="redirecionamento"/>
+        <div class="botoes">
+            <button id="quiz" onclick="funcred(0)">Quiz</button>
+            <button id="video" onclick="funcred(1)">video</button>
+        </div>            
+    </form>
+    
+    </div>
+
+</body>
+</html>
