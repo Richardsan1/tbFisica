@@ -17,11 +17,14 @@ main{
     color: black;
     
 }
-.questões {
+div {
     text-align: left;
     margin: 20px;
 
 }
-input,label{
-    
+button{
+    margin-left: 30%;
+    width: 20vw;
+    height: 50px;
+    margin-top:100px;
 }

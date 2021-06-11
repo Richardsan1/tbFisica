@@ -1,4 +1,10 @@
 <html>
+<style>
+button{
+    margin-top: 50px;
+}
+</style>
+
 <script>
 function retorno()
 {
@@ -37,24 +43,24 @@ else if($questionario == 2)
         3 => 3,
         4 => 2
     );
-echo "OLÁ " . $_COOKIE['nome'] . "<br />";
+echo "OLÁ " . $_COOKIE['nome'] . "<br /><br />";
 //teste de pontuação
 while($i < 5)
 {
     if($resp[$i] == $correto[$i])
     {
-        echo "A Questão $i Está CORRETA <br />";
+        echo "A Questão ". $i+1 . " Está CORRETA <br />";
         $ponts = $ponts + 1 ;
     }
     else if($resp[$i] != $correto[$i])
     {
-        echo "A Questão $i Está ERRADA <br />";
+        echo "A Questão ". $i+1 ." Está ERRADA <br />";
     }
     $i++;
 
 }
 
-echo "Você fez $ponts pontos <br />";
+echo "<br />Você fez $ponts pontos <br />";
 ?>
 <button onclick="retorno()">Voltar ao lobby</button>
 </body>
