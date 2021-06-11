@@ -1,7 +1,13 @@
 <html>
+<script>
+function retorno()
+{
+    window.location.replace("origem.html");
+}
+</script>
 <body>
 <?php
-
+//criação de variáveis
 $questionario = $_GET['numQuest'];
 $resp = array(
     0 => (int)$_GET['questa01'],
@@ -10,9 +16,11 @@ $resp = array(
     3 => (int)$_GET['questa04'],
     4 => (int)$_GET['questa05']
 );
-$cont= 0;
 $ponts = 0;
 $i = 0;
+
+//teste de quiz respondido
+
 if($questionario == 1)
     $correto = array(
         0 => 3,
@@ -21,20 +29,33 @@ if($questionario == 1)
         3 => 1,
         4 => 2
     );
-
-    while($cont < 5)
+else if($questionario == 2)
+    $correto = array(
+        0 => 2,
+        1 => 4,
+        2 => 1,
+        3 => 3,
+        4 => 2
+    );
+echo "OLÁ " . $_COOKIE['nome'] . "<br />";
+//teste de pontuação
+while($i < 5)
+{
+    if($resp[$i] == $correto[$i])
     {
-        if (++$i >= strlen($questionario))
-        {
-            
-            $i = 0;
-        }
-        if($questionario["1"] == $correto["1"])
-            $ponts++;
-        $i++;
+        echo "A Questão $i Está CORRETA <br />";
+        $ponts = $ponts + 1 ;
     }
-var_dump($ponts);
+    else if($resp[$i] != $correto[$i])
+    {
+        echo "A Questão $i Está ERRADA <br />";
+    }
+    $i++;
 
+}
+
+echo "Você fez $ponts pontos <br />";
 ?>
+<button onclick="retorno()">Voltar ao lobby</button>
 </body>
 </html>
