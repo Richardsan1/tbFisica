@@ -1,4 +1,7 @@
 <html>
+<head>
+    <title>redirect</title>
+</head>
 <body>
 <?php
     $teste = (int) $_GET['redirecionamento'];
@@ -8,7 +11,7 @@
     var teste = "<?php echo $teste;?>"
     if(teste == 0)
     {
-        window.location.replace("quiz.html");
+        window.location.replace("quizes.html");
     }
     else if(teste == 1)
     {
