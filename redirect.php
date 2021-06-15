@@ -17,7 +17,7 @@
     }
     else if(teste == 1)
     {
-        window.location.replace("doc-non-ecziste.html");
+        window.location.replace("doc.html");
     }
 </script>
 </html>

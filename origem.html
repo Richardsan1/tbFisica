@@ -6,7 +6,8 @@
     <title>Inicio</title>
     <style>
         body{
-            background-image: url('outerspace-17.gif');
+            font-family: helvetica;
+            background-image: url('fundo_origem1.jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
@@ -16,15 +17,18 @@
          }
          .tudo{
              margin-top: 17%;
-             margin-left: 31%;
+             margin-left: 28%;
              display: inline-block;
-             background-color: #A0A0A0;
-             border: 4px solid black;
+             background-color: rgb(255,255,255,0.8);
+             box-shadow: 0px 0px 20px black;
+             padding: 10px 20px 10px 20px;
          }
          button{
-             margin-left: 30%;
-             height: 25%;
-             width: 13%;
+             margin-top: 10px;
+             margin-left: 14.5%;
+             height: 5vh;
+             width: 11vw;
+
          }
          #video {
              margin-left: 10%;
@@ -34,10 +38,11 @@
              width: 80%;
              margin-left: 10%;
              border:1px solid black;
+             margin-top: 15px;
          }
          label{
-             margin-left: 20%;
-             font-size: 150%;
+            margin-left: 20%;
+            font-size: 150%;
          }
     </style>
 </head>
@@ -59,15 +64,14 @@
 
 <body>
     <div class="tudo">
-        
-    <h1>Bem vindo a o clube da Astronomia  </h1>
-    <form action="redirect.php">
-        <label for="">Informe seu nome de viajante</label><br>
+        <h1>Bem-vindo ao clube da Astronomia  </h1>
+    <form action="redirect.php" method="GET">
+        <label for="">Informe seu nome de viajante</label><br />
         <input type="text " name="NOME"/>
         <input type="hidden" value="" name="redirecionamento" id="redirecionamento"/>
         <div class="botoes">
             <button id="quiz" onclick="funcred(0)">Quiz</button>
-            <button id="video" onclick="funcred(1)">DOC</button>
+            <button id="doc" onclick="funcred(1)">Aprender</button>
         </div>            
     </form>
     
