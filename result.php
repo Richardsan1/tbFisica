@@ -1,25 +1,53 @@
 <html>
 <style>
-body{
-    font-family: helvetica;
-    text-align: center;
-    background-image: url('images/fundos_final1.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
+@media only screen and (min-device-width:1000px){
+    body{
+        font-family: helvetica;
+        text-align: center;
+        background-image: url('images/fundos_final1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+    }
+    button{
+        margin-top: 50px;
+        height: 50px;
+        width:150px;
+    }
+    div{
+        background: rgba(255,255,255,0.8);
+        padding: 5px 0px 15px 0px;
+        width: 400px;
+        margin-left:35vw;
+        margin-top:15vh;
+        box-shadow: 0px 0px 10px #000;
+    }
 }
-button{
-    margin-top: 50px;
-    height: 50px;
-    width:150px;
-}
-div{
-    background: rgba(255,255,255,0.8);
-    padding: 5px 0px 15px 0px;
-    width: 400px;
-    margin-left:35vw;
-    margin-top:15vh;
-    box-shadow: 0px 0px 10px #000;
+@media only screen and (max-device-width:600px){
+    body{
+        font-family: helvetica;
+        text-align: center;
+        background-image: url('images/fundos_final1.jpg');
+        background-repeat: no-repeat;
+        background-size: 300% 100%;
+        background-position-x: center;
+        
+    }
+    button{
+        margin-top: 50px;
+        height: 5vh;
+        width:20vw;
+        font-size:100%;
+    }
+    div{
+        background: rgba(255,255,255,0.8);
+        padding: 5px 0px 15px 0px;
+        width: 800px;
+        margin-left:10vw;
+        margin-top:25vh;
+        box-shadow: 0px 0px 10px #000;
+        font-size: 200%;
+    }
 }
 </style>
 
