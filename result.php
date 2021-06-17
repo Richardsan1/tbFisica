@@ -3,7 +3,7 @@
 body{
     font-family: helvetica;
     text-align: center;
-    background-image: url('fundos_final1.jpg');
+    background-image: url('images/fundos_final1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     

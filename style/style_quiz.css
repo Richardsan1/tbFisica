@@ -1,0 +1,71 @@
+body {
+    font-family: helvetica;
+    text-align: center;
+    background-image: url("../images/bing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+  h1 {
+    text-align: center;
+}
+main{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+    width: 50vw;
+    margin-left: 310px;
+    color: black;
+    
+}
+div {
+    text-align: left;
+    margin: 20px;
+
+}
+button{
+    margin-left: 58%;
+    width: 20vw;
+    height: 50px;
+    margin-top:100px;
+}
+label{
+    font-size: 125%;
+}
+@media only screen and (max-device-width:600px){
+    body {
+        font-family: helvetica;
+        text-align: center;
+        background-image: url("../images/bing.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+    }
+      h1 {
+        text-align: center;
+    }
+    main{
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid white;
+        width: 100vw;
+        margin-left:0px;
+        color: black;
+        
+    }
+    div {
+        text-align: left;
+        margin: 20px;
+    
+    }
+    button{
+        margin-left: 58%;
+        width: 20vw;
+        height: 50px;
+        margin-top:100px;
+    }
+    label{
+        font-size: 125%;
+    }
+
+}

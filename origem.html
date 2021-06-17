@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: helvetica;
-            background-image: url('fundo_origem1.jpg');
+            background-image: url('images/fundo_origem1.jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
@@ -44,11 +44,54 @@
             margin-left: 20%;
             font-size: 150%;
          }
+         /* parte mobile */
+         @media only screen and (max-width: 600px){
+             
+            body{
+            font-family: helvetica;
+            background-image: url('images/fundo_origem_mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            }
+            .botoes{
+                display: flex;
+            }
+            .tudo{
+                display: inline-block;
+                margin-top: 35vh;
+                margin-left: 16vw;
+                background-color: rgb(255,255,255,0.8);
+                box-shadow: 0px 0px 20px black;
+                padding: 10px 20px 20px 20px;
+                width: 60vw;
+                height: 20vh;
+            }
+            button{
+                margin-left: 6.5vw;
+                height: 5vh;
+                width: 20vw;
+
+            }
+            input{
+                height: 20%;
+                width: 90%;
+                border:1px solid black;
+                margin-left: 3vw;
+            }
+            label{
+                font-size: 80%;
+                margin-left: 7vw;
+            }
+            h1{
+                font-size: 80%;
+                margin-left: 3vw;
+            }
+         }
     </style>
 </head>
 
 <script>
-    
+
     function funcred(nButton)
     {
         if(nButton == 0)
@@ -66,8 +109,8 @@
     <div class="tudo">
         <h1>Bem-vindo ao clube da Astronomia  </h1>
     <form action="redirect.php" method="GET">
-        <label for="">Informe seu nome de viajante</label><br />
-        <input type="text " name="NOME"/>
+        <label for="">Qual é o seu nome, Astronauta?</label><br />
+        <input type="text" name="NOME" required/>
         <input type="hidden" value="" name="redirecionamento" id="redirecionamento"/>
         <div class="botoes">
             <button id="quiz" onclick="funcred(0)">Quiz</button>
