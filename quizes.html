@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Quizes</title>
+    <title>Quiz Semana da Astronômia</title>
 </head>
 <style>
 @media only screen and (min-device-width:1000px){
@@ -12,8 +12,10 @@
     div{
         text-align: center;
         flex-direction: row;
-        width:300px;
-        height: 321px;
+        min-width:300px;
+        min-height: 321px;
+        max-width: 500px;
+        max-height: 321px;
         margin-top: 30px;
         margin-left: 30px;
         border:2px solid #0a0a0a;
@@ -25,8 +27,20 @@
         border: 0px solid black;
     }
     img{
-        width: 300px;
-        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 500px;
+        max-height: 400px;
+    }
+    #quiz1{
+        width:360px;
+        height: 321px;
+    }
+    #button_quiz1{
+        width:360px;
+    }
+    #button_quiz2{
+        width:500px;
     }
 }
 @media only screen and (max-device-width:999px){
@@ -54,21 +68,22 @@
         width: 60vw;
         height: 30vh;
     }
+
 }
 </style>
 
 <body>
 
-<div>
+<div id="quiz1">
     <a href="quiz1.html" >
         <img src="images/inicio_uni.jpg" />
-        <button>Quiz: Inicio Do Universo</button>
+        <button id="button_quiz1">Quiz: Inicio Do Universo parte I</button>
     </a>
 </div>
-<div>
+<div id="quiz2">
     <a href="quiz2.html" >
-        <img src="images/lixo-espacial_0.jpg" />
-        <button>Quiz: Lixo Espacial</button>
+        <img src="images/inicio_uni1.jpg" id="img2"/>
+        <button id="button_quiz2">Quiz: Inicio Do Universo parte II</button>
     </a>
 </div>
 

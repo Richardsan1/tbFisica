@@ -1,4 +1,7 @@
 <html>
+<head>
+    <title>A Origem do Universo - Resultados</title>
+</head>
 <style>
 @media only screen and (min-device-width:1000px){
     body{
@@ -92,7 +95,8 @@ else if($questionario == 2)
         3 => 3,
         4 => 2
     );
-echo "<h1>Olá, " . $_COOKIE['nome'] . "</h1><br /><br />";
+if ($_COOKIE['nome'] != "")
+    echo "<h1>Olá, " . $_COOKIE['nome'] . "</h1><br /><br />";
 echo "<h2>Este foi o seu desempenho:</h2>";
 
 //teste de pontuação
@@ -101,18 +105,33 @@ while($i < 5)
 {
     if($resp[$i] == $correto[$i])
     {
-        echo "<label>A Questão ". $i+1 . " Está CORRETA </label><br />";
+        echo "<label>A Questão ". ($i+1) . " Está CORRETA </label><br />";
         $ponts = $ponts + 1 ;
     }
     else if($resp[$i] != $correto[$i])
     {
-        echo "<label>A Questão ". $i+1 ." Está ERRADA </label><br />";
+        echo "<label>A Questão ". ($i+1) ." Está ERRADA </label><br />";
     }
     $i++;
 
 }
+if ($ponts == 1)
+{
+    echo "<br /><label> Que pena! você fez apenas $ponts ponto </label><br />";
+}
+else if ($ponts > 1 && $ponts < 5)
+{
+    echo "<br /><label>Você fez $ponts pontos</label><br />";
+}
+else if($ponts == 5)
+{
+    echo "<br /><label>Parabéns, você acertou tudo!</label><br />";
+}
+else if ($ponts == 0){
+    echo "<br /><label>Que pena! Você não acertou nenhum </label><br />";
+    echo "<label>assista nosso video para aprender mais </label><br />";
+}
 
-echo "<br /><label>Você fez $ponts pontos </label><br />";
 ?>
 
 <button onclick="retorno()">Voltar ao lobby</button>
