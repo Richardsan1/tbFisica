@@ -17,7 +17,7 @@
     }
     else if(teste == 1)
     {
-        window.location.replace("doc.html");
+        window.location.replace("video.html");
     }
 </script>
 </html>

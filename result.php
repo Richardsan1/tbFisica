@@ -3,7 +3,7 @@
     <title>A Origem do Universo - Resultados</title>
 </head>
 <style>
-@media only screen and (min-device-width:1000px){
+@media only screen and (min-device-width:900px){
     body{
         font-family: helvetica;
         text-align: center;
@@ -26,7 +26,7 @@
         box-shadow: 0px 0px 10px #000;
     }
 }
-@media only screen and (max-device-width:600px){
+@media only screen and (max-device-width:899px){
     body{
         font-family: helvetica;
         text-align: center;
