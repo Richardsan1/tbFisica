@@ -34,4 +34,4 @@ O projeto foi feito utilizando:
 
 ## Contribuidores
 
-- [Richard Barbosa Sanches](https://github.com/ReidakaiMFZ)
+- [Richard Barbosa Sanches](https://github.com/Richardsan1)
